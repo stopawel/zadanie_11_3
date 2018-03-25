@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Walter+Turncoat');
+
+body {
+  margin: 0;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+ul{
+	padding: 0;
+}
+.ui-sortable {
+  min-height: 60px;
+}
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+/* BOARD */
+.board h1 {
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.create-column, 
+.column-add-card {
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ddd;
+  font-family: 'Walter Turncoat', cursive;
+  outline: none;
+}
+.board {
+  text-align: center;
+  background-image: url('https://wallpapertag.com/wallpaper/full/f/1/2/270877-free-chalkboard-background-1920x1080.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Walter Turncoat', cursive;
+  height: 30vh;
+}
+.column-container {
+  background-image: url('https://cdn.pixabay.com/photo/2016/10/12/06/42/wall-1733680_960_720.jpg');
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+/* COLUMN */
+.column {
+  order: 1;
+  width: 400px;
+  min-height: 60vh;
+  background-image: url('http://www.amadeus-badwaldsee.de/images/blackboard-background.jpg?crc=310691793');
+  background-position: center;
+  background-size: cover;
+  border: solid silver 5px;
+  box-shadow: 3px 3px 5px #000;
+  margin: 25px 10px;
+  list-style: none;
+  position: relative;
+  font-family: 'Homemade Apple', cursive;
+}
+.column-add-card {
+  display: block;
+}
+
+/* STYLE KARTY */
+.card {
+  text-align: left;
+  display: block;
+  min-height: 60px;
+  margin: 5px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  margin: 2px 0;
+}
+.card-placeholder {
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+  min-height: 60px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
